@@ -1,38 +1,39 @@
 body {
     position: relative;
+    background-color: #e8ebec;
+}
+#main {
     display: grid;
     grid-template-rows: auto auto auto auto;
-    background-color: #e8ebec;
 }
 .heading {
     grid-row: 1 / 2;
     justify-self: center;
 }
-.image {
+#img-div {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto auto;
     grid-row: 2 / 3;
     border: thin solid white;
     background-color: white;
-    justify-self: center;
     box-shadow: 5px 5px 10px gray;
     margin: 20px;
     padding: 10px 20px;
 }
-.image img {
-    float: center;
+#img-div #image {
+    justify-self: center;
     grid-area: 1/ 2/ 2/ 3;
 }
-.image #imgcap {
+#img-div #img-caption {
     grid-area: 2/ 2/ 3/ 3;
     font-size: 18px;
     padding-top: 10px;
 }
-.box {
+#tribute-info {
     grid-row: 3 / 4;
     justify-self: center;
-    margin: 20px 15px;
+    margin: 20px 7%;
     border: thin solid white;
     box-shadow: 5px 5px 10px gray;
     background-color: white;
